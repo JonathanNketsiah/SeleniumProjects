@@ -1,3 +1,5 @@
+package AutomationExercise;
+
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
