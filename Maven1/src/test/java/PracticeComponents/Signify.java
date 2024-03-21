@@ -42,7 +42,8 @@ public class Signify {
         driver.switchTo().defaultContent();
 
         WebElement companyLink = driver.findElement(By.xpath("/html/body/section/div/div[2]/div/div/header/div/nav/div/div[2]/div/div[6]/span"));
-            companyLink.click();
+            Actions comp = new Actions(driver);
+            comp.click(companyLink).perform();
 
         WebElement ourCompany = driver.findElement(By.xpath("/html/body/section/div/div[2]/div/div/header/div/nav/div/div[2]/div/div[6]/div[2]/div/div/ul/li[1]/a/span"));
         ourCompany.click();
